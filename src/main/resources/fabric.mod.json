@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "hyupdong",
+  "version": "${version}",
+
+  "name": "Hyupdong Mod",
+  "description": "Two players divide the control",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "dolphin2410.me",
+    "sources": "https://github.com/dolphin2410/hyupdong"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.dolphin2410.hyupdong.HyupdongMain"
+    ]
+  },
+  "mixins": [
+    "hyupdong.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
